@@ -1,9 +1,9 @@
 #Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
-#For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
-
+#For example, if we run 9119 through the function, 811181 
+# will come out, because 92 is 81 and 12 is 1.
 # Note: The function accepts an integer and returns an integer
-
+'''
 def elemento(n):
     numero = str(n)
     lista_numeros = list(numero)
@@ -20,9 +20,16 @@ def elemento(n):
     for i in resultado:
         numero += i
     print(numero)
+'''
 
+def elemento():
+    numero_elevar = input("Ingresa numero: ")
+    salida =  []
+    resultado = ""
+    for i in list(numero_elevar):
+        salida.append(int(i)**2)
+    for x in salida:
+        resultado += str(x)
+    print(resultado)
 
-       
-   
-
-elemento(9119)
+elemento()
